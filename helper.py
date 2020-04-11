@@ -254,4 +254,4 @@ async def kick_error(ctx, error):
         await ctx.send('❌Не достаточно прав❌', delete_after=10)
         await ctx.send('😉Попробую взломать сервак, MamKin XaцKeр😉', delete_after=10)
 
-client.run(TOKEN)
+token = os.environ.get('BOT_TOKEN')
