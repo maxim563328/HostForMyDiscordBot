@@ -20,7 +20,7 @@ status = cycle(['Visial Studio Code', 'разработку ботов',
 
 
 # Токен бота читается в отдельном файле
-TOKEN = open('token.txt', 'r').readline()
+#TOKEN = open('token.txt', 'r').readline()
 # Можно ставить любой префикс, но не желательны ---> ! , ;; , @ , .
 PREFIX = '$'
 
