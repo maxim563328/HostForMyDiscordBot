@@ -19,8 +19,8 @@ status = cycle(['Visial Studio Code', 'разработку ботов',
 # КОНФИГ БОТА
 
 
-# Токен бота читается в отдельном файле
-#TOKEN = open('token.txt', 'r').readline()
+# Токен бота
+token = os.environ.get('BOT_TOKEN')
 # Можно ставить любой префикс, но не желательны ---> ! , ;; , @ , .
 PREFIX = '$'
 
@@ -254,4 +254,4 @@ async def kick_error(ctx, error):
         await ctx.send('❌Не достаточно прав❌', delete_after=10)
         await ctx.send('😉Попробую взломать сервак, MamKin XaцKeр😉', delete_after=10)
 
-token = os.environ.get('BOT_TOKEN')
+client.run(str(token))
